@@ -81,7 +81,11 @@ sudo systemctl start kubelet
 ```bash
 sudo kubeadm config images pull
 
-sudo kubeadm init
+sudo kubeadm init / sudo kubeadm init --ignore-preflight-errors=all
+
+
+![image](https://github.com/gangawaromkar/kubestarter/assets/111915429/1e4788da-3c65-48a1-9b3e-c14678cc48ce)
+
 
 mkdir -p "$HOME"/.kube
 sudo cp -i /etc/kubernetes/admin.conf "$HOME"/.kube/config
